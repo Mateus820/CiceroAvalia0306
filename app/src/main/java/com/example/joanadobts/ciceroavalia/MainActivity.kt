@@ -1,5 +1,6 @@
 package com.example.joanadobts.ciceroavalia
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,6 +18,7 @@ class MainActivity : DebugActivity() {
         var buttonLogin = findViewById<Button>(R.id.button)
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
+        var buttonSign = findViewById<Button>(R.id.button2)
 
         buttonLogin.setOnClickListener {
 
@@ -32,9 +34,15 @@ class MainActivity : DebugActivity() {
                 startActivity(intent)
             } else {
 
-                Toast.makeText(this, "login e/ou senha incorretos")
+                Toast.makeText(this, "login e/ou senha incorretos", Toast.LENGTH_LONG).show()
             }
 
+        }
+
+        buttonSign.setOnClickListener {
+
+            val nextIntent = Intent(this, Cadastro::class.java)
+            startActivity(nextIntent)
         }
     }
     }
