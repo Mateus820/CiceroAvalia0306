@@ -15,6 +15,9 @@ class BemVindo : DebugActivity() {
         setContentView(R.layout.activity_bemvindo)
 
     }
+
+    val args:Bundle? = intent?.extras
+    val nome:String? = args?.getString("usuario")
 }
 
 

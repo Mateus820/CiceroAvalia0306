@@ -1,55 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center_vertical"
-        tools:context=".Cadastro">
 
+<Line
     <TextView
-            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CiceroAvalia"
-            android:textSize="50sp"
-            android:gravity="center"
-            android:layout_centerVertical="true"/>
-
-    <TextView
-            android:layout_marginTop="80dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="20sp"/>
+            android:text="@string/nomeUser"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/tLog"/>
+            android:inputType="text"
+            android:textSize="16sp"
+            android:id="@+id/txtUsuario"
+            android:layout_marginTop="10dp"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Senha"
-            android:textSize="20sp"/>
+            android:text="@string/loginCasdastro"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/tPass"/>
-    <Button
-            android:text="Logar"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:id="@+id/loginCadastro"
+            android:layout_marginTop="10dp"/>
+
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button"/>
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/senhaUsuario"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtSenhaUsuario"
+            android:inputType="textPassword"/>
+
     <Button
-            android:text="CADASTRAR"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content" android:id="@+id/button2"/>
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/cadastrar"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:id="@+id/btnCadastrarUsuario"/>
 
-
-</LinearLayout>
+<LinearLayout/>
