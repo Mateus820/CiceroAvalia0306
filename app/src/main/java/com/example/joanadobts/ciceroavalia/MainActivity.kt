@@ -14,14 +14,25 @@ class MainActivity : DebugActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var txtAge = findViewById<EditText>(R.id.editText12)
-        var btnLogin = findViewById<Button>(R.id.button)
+        var buttonLogin = findViewById<Button>(R.id.button)
+        var tLogin = findViewById<EditText>(R.id.tLog)
+        var tPassword = findViewById<EditText>(R.id.tPass)
 
-        btnLogin.setOnClickListener {
-            if (txtAge.text.toString().toInt() > 18) {
-                Toast.makeText(this, "Você tem mais de 18 anos!", Toast.LENGTH_LONG).show()
+        buttonLogin.setOnClickListener {
+
+            var login = tLogin?.text.toString()
+            var senha = tPassword?.text.toString()
+
+            if (login.toLowerCase() == "Denilson" && senha == "nave19") {
+
+                val intent = Intent(this, BemVindo::class.java)
+                val params = Bundle()
+                params.putString("usuario", login)
+                intent.putExtras(params)
+                startActivity(intent)
             } else {
-                Toast.makeText(this, "Você tem menos de 18 anos!", Toast.LENGTH_LONG).show()
+
+                Toast.makeText(this, "login e/ou senha incorretos")
             }
 
         }
