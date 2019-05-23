@@ -7,49 +7,35 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:gravity="center_vertical"
-        tools:context=".MainActivity">
+        tools:context=".BemVindo">
 
     <TextView
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CiceroAvalia"
+            android:text="Bem-Vindo!"
             android:textSize="50sp"
             android:gravity="center"
             android:layout_centerVertical="true"/>
 
     <TextView
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="20sp"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/tLog"/>
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Senha"
-            android:textSize="20sp"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/tPass"/>
+            android:text="Você deseja fazer uma avaliação sobre:"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
+
+
     <Button
-            android:text="Logar"
+            android:text="Professores"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button"/>
+            android:layout_height="85dp" android:id="@+id/button"/>
     <Button
-            android:text="CADASTRAR"
+            android:text="Coordenação"
             android:layout_width="380dp"
-            android:layout_height="wrap_content" android:id="@+id/button2"/>
+            android:layout_height="89dp" android:id="@+id/button2"/>
 
 
 </LinearLayout>
