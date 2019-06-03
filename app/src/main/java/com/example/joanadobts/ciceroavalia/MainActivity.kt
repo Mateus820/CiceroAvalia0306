@@ -18,14 +18,17 @@ class MainActivity : DebugActivity() {
         var buttonLogin = findViewById<Button>(R.id.button)
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
-        var buttonSign = findViewById<Button>(R.id.button2)
+        var buttonSign = findViewById<Button>(R.id.button)
+        var buttonProf = findViewById<Button>(R.id.button7)
+        var buttonOberdan = findViewById<Button>(R.id.button27)
+
 
         buttonLogin.setOnClickListener {
 
             var login = tLogin?.text.toString()
             var senha = tPassword?.text.toString()
 
-            if (login.toLowerCase() == "Denilson" && senha == "nave19") {
+            if (login.toLowerCase() == "denilson" && senha == "nave19") {
 
                 val intent = Intent(this, BemVindo::class.java)
                 val params = Bundle()
@@ -44,6 +47,17 @@ class MainActivity : DebugActivity() {
             val nextIntent = Intent(this, Cadastro::class.java)
             startActivity(nextIntent)
         }
+        buttonProf.setOnClickListener {
+
+            val nextIntent = Intent(this, Professores::class.java)
+            startActivity(nextIntent)
+        }
+        buttonOberdan.setOnClickListener {
+
+            val nextIntent = Intent(this, Oberdan::class.java)
+            startActivity(nextIntent)
+        }
+
     }
     }
 
